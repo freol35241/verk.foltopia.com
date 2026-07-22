@@ -2,7 +2,10 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    # claude/repository-setup-zy54vc is temporary: the github-pages
+    # environment still pins it as an allowed deploy branch; drop it once
+    # the environment policy allows main.
+    branches: [main, claude/repository-setup-zy54vc]
   workflow_dispatch:
 
 permissions:
