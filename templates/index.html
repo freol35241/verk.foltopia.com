@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header>
+  <div class="mark"><b>verk</b><span>.foltopia.com</span></div>
+  <div class="about">
+    {{ section.content | safe }}
+    <p class="contact">
+      {% for link in config.extra.elsewhere %}<a href="{{ link.url }}">{{ link.name | lower }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+    </p>
+  </div>
+</header>
+
+{% for s in config.extra.sections %}
+  {% set sec = get_section(path=s.path ~ "/_index.md") %}
+  {% if sec.pages | length > 0 %}
+  <section>
+    <h2>{{ s.sv }} <i>/ {{ s.en }}</i></h2>
+    {% for page in sec.pages %}
+    <article class="entry">
+      <div class="t">
+        {% if page.extra.external_url %}
+          <a href="{{ page.extra.external_url }}">{{ page.title }}</a>
+        {% elif page.content %}
+          <a href="{{ page.permalink }}">{{ page.title }}</a>
+        {% else %}
+          {{ page.title }}
+        {% endif %}
+      </div>
+      {% if page.extra.gloss %}<div class="g">{{ page.extra.gloss }}</div>{% endif %}
+      <div class="m">
+        {%- set bits = [] -%}
+        {%- if page.extra.status -%}{%- set bits = bits | concat(with=page.extra.status) -%}
+        {%- elif page.date -%}{%- set bits = bits | concat(with=page.date | date(format="%Y")) -%}{%- endif -%}
+        {%- if page.extra.lang -%}{%- set bits = bits | concat(with=page.extra.lang) -%}{%- endif -%}
+        {%- if page.extra.meta -%}{%- set bits = bits | concat(with=page.extra.meta) -%}{%- endif -%}
+        {{- bits | join(sep=" · ") -}}
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+{% endfor %}
+
+<footer class="foot">
+  <p>Sidoverksamhet / elsewhere:
+    {% for link in config.extra.elsewhere %}<a href="{{ link.url }}">{{ link.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+  </p>
+  <p>{{ config.extra.affiliation_note }}</p>
+</footer>
+{% endblock %}

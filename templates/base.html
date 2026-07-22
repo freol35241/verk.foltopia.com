@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{% block lang %}sv{% endblock %}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ config.title }}.foltopia.com{% endblock %}</title>
+<meta name="description" content="{{ config.description }}">
+<link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+<link rel="alternate" type="application/atom+xml" title="verk" href="{{ get_url(path='atom.xml') }}">
+</head>
+<body>
+<div class="col">
+{% block content %}{% endblock %}
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+# verk.foltopia.com — site configuration
+
+base_url = "https://verk.foltopia.com"
+title = "verk"
+description = "Fredriks samlade verk / Fredrik's collected works"
+default_language = "sv"
+
+compile_sass = false
+build_search_index = false
+
+# Atom feed for the whole site (new works appear here)
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+[markdown]
+highlight_code = true
+highlight_theme = "inspired-github"
+smart_punctuation = true
+
+[extra]
+author = "Fredrik"
+# Sections rendered on the front page, in order.
+# Each maps to a directory under content/.
+sections = [
+  { path = "books",    sv = "Böcker",   en = "books" },
+  { path = "essays",   sv = "Essäer",   en = "essays" },
+  { path = "papers",   sv = "Artiklar", en = "papers" },
+  { path = "software", sv = "Verktyg",  en = "tools" },
+]
+# Footer links ("Annat / elsewhere")
+elsewhere = [
+  { name = "The Plimsoll Line", url = "https://plimsolline.example" },
+  { name = "GitHub", url = "https://github.com/freol35241" },
+  { name = "email", url = "mailto:hello@foltopia.com" },
+]
+affiliation_note = "Papers written at RISE Research Institutes of Sweden. Everything else is my own."

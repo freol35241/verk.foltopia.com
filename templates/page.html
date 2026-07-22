@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block lang %}{% if page.extra.lang %}{{ page.extra.lang }}{% else %}sv{% endif %}{% endblock %}
+{% block title %}{{ page.title }} — verk.foltopia.com{% endblock %}
+
+{% block content %}
+<nav class="crumb"><a href="{{ get_url(path='') }}">&larr; verk</a></nav>
+<article class="work">
+  <h1>{{ page.title }}</h1>
+  <div class="m">
+    {%- set bits = [] -%}
+    {%- if page.date -%}{%- set_global bits = bits | concat(with=page.date | date(format="%Y-%m-%d")) -%}{%- endif -%}
+    {%- if page.extra.lang -%}{%- set_global bits = bits | concat(with=page.extra.lang) -%}{%- endif -%}
+    {%- if page.extra.meta -%}{%- set_global bits = bits | concat(with=page.extra.meta) -%}{%- endif -%}
+    {{- bits | join(sep=" · ") -}}
+  </div>
+  {{ page.content | safe }}
+</article>
+{% endblock %}

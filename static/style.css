@@ -1,0 +1,87 @@
+/* verk.foltopia.com — one quiet column. System fonts, no JS, ~2 kB. */
+
+:root {
+  --ink: #1a1c1e;
+  --paper: #fdfdfb;
+  --muted: #8a8a82;
+  --soft: #555550;
+  --accent: #1f4e46;
+  --accent-soft: #b9cdc8;
+  --rule: #e4e4dc;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Charter, Georgia, 'Times New Roman', serif;
+  padding: 0 20px;
+}
+
+.col { max-width: 620px; margin: 0 auto; padding: 72px 0 96px; }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
+a:hover { border-bottom-color: var(--accent); }
+
+/* header */
+.mark { font-size: 19px; letter-spacing: 0.02em; }
+.mark b { font-weight: 700; }
+.mark span { color: var(--muted); }
+
+.about { margin-top: 40px; font-size: 17px; line-height: 1.65; max-width: 52ch; }
+.about .contact { margin-top: 10px; font-size: 15px; color: var(--soft); }
+
+/* sections */
+h2 {
+  margin-top: 72px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+h2 i { font-style: normal; color: #bcbcb4; }
+
+.entry { margin-top: 28px; }
+.entry .t { font-size: 20px; line-height: 1.3; }
+.entry .t a { color: inherit; border-bottom: 1px solid #d8d8d0; }
+.entry .t a:hover { border-bottom-color: var(--accent); }
+.entry .g { margin-top: 4px; font-size: 15px; line-height: 1.5; color: var(--soft); font-style: italic; }
+.entry .m {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--muted);
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+/* footer */
+.foot {
+  margin-top: 88px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* individual work pages */
+.crumb { font-size: 14px; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+.work h1 { margin-top: 40px; font-size: 28px; line-height: 1.25; font-weight: 700; }
+.work .m {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+.work p, .work ul, .work ol, .work blockquote { margin-top: 20px; font-size: 17px; line-height: 1.65; }
+.work blockquote { padding-left: 16px; border-left: 2px solid var(--rule); color: var(--soft); }
+.work h2 { margin-top: 48px; }
+.work code { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 0.9em; }
+.work pre { margin-top: 20px; padding: 14px 16px; overflow-x: auto; background: #f4f4ef; border-radius: 3px; }
+
+@media print {
+  body { padding: 0; }
+  a { color: inherit; border-bottom: none; }
+}
