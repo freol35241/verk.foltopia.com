@@ -6,5 +6,5 @@ weight = 10
 gloss = "A field test for whether research creates change or paper."
 lang = "en"
 meta = "book"
-external_url = "https://example.com/ddt"
+external_url = "https://a.co/d/08LgNeRd"
 +++

@@ -5,5 +5,6 @@ weight = 10
 [extra]
 lang = "en"
 meta = "InnovSail 2026"
-external_url = "https://doi.org/10.xxxx/placeholder"
+# Conference proceedings PDF; swap for a DOI when one exists.
+external_url = "https://innovsail.com/wp-content/uploads/2026/06/innovsail-2026-proceedings.pdf"
 +++

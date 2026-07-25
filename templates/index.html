@@ -6,7 +6,7 @@
   <div class="about">
     {{ section.content | safe }}
     <p class="contact">
-      {% for link in config.extra.elsewhere %}<a href="{{ link.url }}">{{ link.name | lower }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+      {% for link in config.extra.elsewhere %}<a href="{{ link.url }}"{% if not link.url is starting_with("mailto:") %} target="_blank" rel="noopener"{% endif %}>{{ link.name | lower }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
     </p>
   </div>
 </header>
@@ -20,7 +20,7 @@
     <article class="entry">
       <div class="t">
         {% if page.extra.external_url %}
-          <a href="{{ page.extra.external_url }}">{{ page.title }}</a>
+          <a href="{{ page.extra.external_url }}" target="_blank" rel="noopener">{{ page.title }}</a>
         {% elif page.content %}
           <a href="{{ page.permalink }}">{{ page.title }}</a>
         {% else %}
@@ -44,7 +44,7 @@
 
 <footer class="foot">
   <p>Sidoverksamhet / elsewhere:
-    {% for link in config.extra.elsewhere %}<a href="{{ link.url }}">{{ link.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+    {% for link in config.extra.elsewhere %}<a href="{{ link.url }}"{% if not link.url is starting_with("mailto:") %} target="_blank" rel="noopener"{% endif %}>{{ link.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
   </p>
   <p>{{ config.extra.affiliation_note }}</p>
 </footer>

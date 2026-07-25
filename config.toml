@@ -15,6 +15,7 @@ generate_feeds = true
 feed_filenames = ["atom.xml"]
 
 [markdown]
+external_links_target_blank = true
 highlight_code = true
 highlight_theme = "inspired-github"
 smart_punctuation = true
@@ -31,8 +32,7 @@ sections = [
 ]
 # Footer links ("Annat / elsewhere")
 elsewhere = [
-  { name = "The Plimsoll Line", url = "https://plimsolline.example" },
   { name = "GitHub", url = "https://github.com/freol35241" },
-  { name = "email", url = "mailto:hello@foltopia.com" },
+  { name = "email", url = "mailto:freol@outlook.com" },
 ]
 affiliation_note = "Papers written at RISE Research Institutes of Sweden. Everything else is my own."

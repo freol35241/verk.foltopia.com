@@ -1,5 +1,5 @@
 +++
-title = "Keelson"
+title = "keelson"
 weight = 10
 [extra]
 gloss = "Zenoh-based maritime middleware. Apache 2.0."
