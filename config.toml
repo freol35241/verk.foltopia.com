@@ -1,8 +1,6 @@
 # verk.foltopia.com — site configuration
 
-# Temporary while previewing on the default Pages domain; switch back to
-# https://verk.foltopia.com together with restoring static/CNAME.
-base_url = "https://freol35241.github.io/verk.foltopia.com"
+base_url = "https://verk.foltopia.com"
 title = "verk"
 description = "Fredriks samlade verk / Fredrik's collected works"
 default_language = "sv"
