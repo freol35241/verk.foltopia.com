@@ -1,8 +1,9 @@
 +++
-title = "SPAM: a physics-guided additive model of sailing performance"
-date = 2026-03-01
+title = "Physics-Guided Machine Learning for Performance Modelling of the Nacra 17 Class"
+date = 2026-06-01
 weight = 10
 [extra]
+gloss = "Introduces SPAM, the Sailing Performance Additive Model."
 lang = "en"
 meta = "InnovSail 2026"
 role = "first author"
