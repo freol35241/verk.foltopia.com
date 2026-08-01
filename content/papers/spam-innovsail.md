@@ -5,8 +5,7 @@ weight = 10
 [extra]
 gloss = "Introduces SPAM, the Sailing Performance Additive Model."
 lang = "en"
-meta = "InnovSail 2026"
+meta = "J. Sailing Technology"
 role = "first author"
-# Conference proceedings PDF; swap for a DOI when one exists.
-external_url = "https://innovsail.com/wp-content/uploads/2026/06/innovsail-2026-proceedings.pdf"
+external_url = "https://doi.org/10.5957/jst/2026.11.1.238"
 +++
