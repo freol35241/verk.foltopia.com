@@ -5,5 +5,6 @@ weight = 20
 [extra]
 lang = "en"
 meta = "J. Sailing Technology"
+role = "first author"
 external_url = "https://doi.org/10.5957/jst/2020.3.1.47"
 +++
