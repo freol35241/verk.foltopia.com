@@ -34,6 +34,7 @@
         {%- elif page.date -%}{%- set bits = bits | concat(with=page.date | date(format="%Y")) -%}{%- endif -%}
         {%- if page.extra.lang -%}{%- set bits = bits | concat(with=page.extra.lang) -%}{%- endif -%}
         {%- if page.extra.meta -%}{%- set bits = bits | concat(with=page.extra.meta) -%}{%- endif -%}
+        {%- if page.extra.role -%}{%- set bits = bits | concat(with=page.extra.role) -%}{%- endif -%}
         {{- bits | join(sep=" · ") -}}
       </div>
     </article>
