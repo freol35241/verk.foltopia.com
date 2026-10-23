@@ -1,6 +1,7 @@
 +++
 title = "pontos-hub"
-weight = 30
+date = 2023-02-22  # first commit
+weight = 20
 [extra]
 gloss = "An open datahub of ship operational data to promote research, innovation, and product development."
 lang = "en"
