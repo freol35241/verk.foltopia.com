@@ -2,6 +2,8 @@
 sort_by = "none"
 +++
 
-Fredrik. Research engineer in maritime digitalization at RISE, Gothenburg.
-Physics-guided modeling, epistemics for autonomous systems, and writing
-about things that interest me. This page collects the finished work.
+Fredrik Olsson, research engineer in maritime digitalization at RISE,
+Gothenburg. I work on physics-guided modeling, sailing ships, and
+verification and validation of autonomous maritime systems, and sometimes
+write about other things that interest me. This page lists finished work:
+books, essays, papers and software.
