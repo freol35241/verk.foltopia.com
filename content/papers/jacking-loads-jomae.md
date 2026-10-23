@@ -5,7 +5,7 @@ weight = 80
 [extra]
 lang = "en"
 meta = "J. Offshore Mechanics and Arctic Engineering"
-role = "co-author"
+role = "thesis work"
 # Journal version of the OMAE 2015 conference paper, which it subsumes.
 external_url = "https://doi.org/10.1115/1.4035996"
 +++
