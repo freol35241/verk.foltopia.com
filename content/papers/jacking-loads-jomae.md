@@ -1,7 +1,7 @@
 +++
 title = "Analysis of Impact Loads on a Self-Elevating Unit During Jacking Operation"
 date = 2017-06-01
-weight = 80
+weight = 22
 [extra]
 lang = "en"
 meta = "J. Offshore Mechanics and Arctic Engineering"
