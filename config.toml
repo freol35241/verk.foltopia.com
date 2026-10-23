@@ -33,4 +33,3 @@ elsewhere = [
   { name = "GitHub", url = "https://github.com/freol35241" },
   { name = "email", url = "mailto:freol@outlook.com" },
 ]
-affiliation_note = "Papers written at RISE Research Institutes of Sweden. The rest is personal work."

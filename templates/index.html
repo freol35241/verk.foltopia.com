@@ -43,10 +43,4 @@
   {% endif %}
 {% endfor %}
 
-<footer class="foot">
-  <p>Sidoverksamhet / elsewhere:
-    {% for link in config.extra.elsewhere %}<a href="{{ link.url }}"{% if not link.url is starting_with("mailto:") %} target="_blank" rel="noopener"{% endif %}>{{ link.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
-  </p>
-  <p>{{ config.extra.affiliation_note }}</p>
-</footer>
 {% endblock %}

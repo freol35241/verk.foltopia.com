@@ -56,15 +56,6 @@ h2 i { font-style: normal; color: #bcbcb4; }
   font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 }
 
-/* footer */
-.foot {
-  margin-top: 88px;
-  padding-top: 20px;
-  border-top: 1px solid var(--rule);
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.7;
-}
 
 /* individual work pages */
 .crumb { font-size: 14px; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
