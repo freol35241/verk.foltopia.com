@@ -1,7 +1,7 @@
 +++
 title = "porla"
 date = 2023-06-20  # first commit
-weight = 30
+weight = 40
 [extra]
 gloss = "Pipeline-Oriented Real-time Logging Assistant."
 lang = "en"

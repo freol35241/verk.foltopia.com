@@ -1,7 +1,7 @@
 +++
 title = "keelson"
 date = 2023-08-25  # first commit
-weight = 40
+weight = 30
 [extra]
 gloss = "An API specification for distributed maritime applications on top of Zenoh."
 lang = "en"
